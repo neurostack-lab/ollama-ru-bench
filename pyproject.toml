@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ollama-ru-bench"
+version = "0.1.0"
+description = "Quick Russian-focused Ollama model check"
+requires-python = ">=3.10"
+
+[project.scripts]
+ollama-ru-bench = "ollama_ru_bench.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ollama_ru_bench*"]
